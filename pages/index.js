@@ -36,7 +36,7 @@ export default function Home() {
       </Head>
       <div className='flex flex-col gap-8 justify-between items-center'>
         <h2 className='text-lime-400 mt-8 text-sm'>ADVICE #{adviceID}</h2>
-        <h1 className='text-white text-2xl font-semibold text-center mx-4'>"{advice}"</h1>
+        <h1 className='text-white text-2xl font-semibold text-center mx-4'>&quot;{advice}&quot;</h1>
         <div className='back'></div>
         <button onClick={getAdvice} className='rounded-full translate-y-4 bg-lime-400 w-10 h-10 flex items-center justify-center hover:shadow-[0px_0px_50px_14px_lime]'>
           <Image src={dice} alt="dice" width={15} height={15}></Image>
