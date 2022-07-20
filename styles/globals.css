@@ -1,9 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Manrope', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
 }
 
 a {
@@ -13,4 +21,31 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.gblue {
+  background-color: hsl(217, 19%, 38%);
+}
+
+.dgblue {
+  background-color: hsl(217, 19%, 24%);
+}
+
+.back {
+  background-image: url('../utils/pattern-divider-mobile.svg');
+  width: 90%;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .back {
+    background-image: url('../utils/pattern-divider-desktop.svg');
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
